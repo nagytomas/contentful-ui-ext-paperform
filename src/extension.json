@@ -6,7 +6,7 @@
   "parameters": {
     "installation": [
       {
-        "id": "accessToken",
+        "id": "paperFormAccessToken",
         "name": "Paperform Access Token",
         "description": "Access token used to list the forms.",
         "type": "Text",

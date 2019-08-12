@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     api.window.startAutoResizer();
 
     var value = api.field.getValue();
-    var accessToken = api.parameters.installation.accessToken;
+    var accessToken = api.parameters.installation.paperFormAccessToken;
     var selectField = document.getElementById("paperform-select");
 
     fetch("https://api.paperform.co/v1/forms?limit=100", {
