@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contentful Paperform UI-extension</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/contentful-ui-extensions-sdk@3/dist/cf-extension.css"
+    />
+    <script
+      defer="defer"
+      src="https://unpkg.com/contentful-ui-extensions-sdk@3"
+    ></script>
+    <script defer="defer" src="./bundle.js"></script>
+    <style>
+      .-warning {
+        color: #d9453f;
+        margin-top: 4px;
+        display: none;
+      }
+      .-warning.shown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cf-form-field">
+      <select id="paperform-select" class="cf-form-input">
+        <option value="-1" disabled>Select...</option>
+      </select>
+      <div class="cf-form-hint">
+        Please select the desired Paperform form for this content.
+      </div>
+      <div class="cf-form-hint -warning" id="warning-missing-form">
+        ⚠️ The form you have selected in Contentful no longer exists in
+        Typeform.
+      </div>
+      <div class="cf-form-hint -warning" id="warning-data-error">
+        ⚠️ Error fetching data.
+      </div>
+    </div>
+  </body>
+</html>

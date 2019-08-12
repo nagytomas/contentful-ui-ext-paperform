@@ -1,0 +1,17 @@
+{
+  "name": "Paperform listing",
+  "id": "cf-paperform",
+  "fieldTypes": ["Symbol"],
+  "src": "https://unruffled-payne-a27a79.netlify.com",
+  "parameters": {
+    "installation": [
+      {
+        "id": "accessToken",
+        "name": "Paperform Access Token",
+        "description": "Access token used to list the forms.",
+        "type": "Symbol",
+        "required": true
+      }
+    ]
+  }
+}

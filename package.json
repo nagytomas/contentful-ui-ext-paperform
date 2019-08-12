@@ -1,0 +1,19 @@
+{
+  "name": "contentful-ui-ext-paperform",
+  "private": true,
+  "license": "GNU",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "core-js": "^2.6.1",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.0.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-cpy": "^1.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  }
+}
