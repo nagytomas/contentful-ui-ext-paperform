@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("https://api.paperform.co/v1/forms?limit=100", {
       headers: {
         Authorization: "Bearer " + accessToken
-      }
+      },
+      mode: "no-cors"
     })
       .then(function(response) {
         return response.json();
