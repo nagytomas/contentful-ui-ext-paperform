@@ -4,12 +4,19 @@
   "fieldTypes": ["Symbol"],
   "src": "https://romantic-kepler-0a9cf0.netlify.com/",
   "parameters": {
+    "instance": [
+      {
+        "id": "exampleParameter",
+        "type": "Text",
+        "name": "An example instance parameter"
+      }
+    ],
     "installation": [
       {
         "id": "paperFormAccessToken",
         "name": "Paperform Access Token",
         "description": "Access token used to list the forms.",
-        "type": "Text",
+        "type": "Symbol",
         "required": true
       }
     ]
