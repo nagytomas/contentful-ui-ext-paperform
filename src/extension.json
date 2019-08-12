@@ -9,7 +9,7 @@
         "id": "accessToken",
         "name": "Paperform Access Token",
         "description": "Access token used to list the forms.",
-        "type": "Symbol",
+        "type": "Text",
         "required": true
       }
     ]
