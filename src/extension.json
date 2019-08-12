@@ -4,13 +4,6 @@
   "fieldTypes": ["Symbol"],
   "src": "https://romantic-kepler-0a9cf0.netlify.com/",
   "parameters": {
-    "instance": [
-      {
-        "id": "exampleParameter",
-        "type": "Text",
-        "name": "An example instance parameter"
-      }
-    ],
     "installation": [
       {
         "id": "paperFormAccessToken",
