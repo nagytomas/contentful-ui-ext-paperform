@@ -14,7 +14,7 @@ export default {
     commonjs(),
     uglify(),
     copy({
-      files: ["src/*.html", "src/*.json"],
+      files: ["src/*.html", "src/*.json", "_redirects"],
       dest: "public"
     })
   ]
