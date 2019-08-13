@@ -24,18 +24,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
         forms.forEach(function(value, index) {
           var option = document.createElement("option");
-          option.setAttribute("value", value.id);
+          option.setAttribute("value", value.slug);
           option.innerText = value.title;
           selectField.appendChild(option);
         });
 
         if (!value) {
-          // The field is empty, no need to select anything
+          // The field is empty, select the first item.
+          selectField.selectedIndex = 0;
           return;
         }
 
         var prevValueIndex = forms.findIndex(function(form) {
-          return form.id === value;
+          return form.slug === value;
         });
 
         if (prevValueIndex > -1) {
