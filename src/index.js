@@ -30,13 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (!value) {
-          // The field is empty, select the first item.
-          selectField.selectedIndex = 0;
           return;
         }
 
         var prevValueIndex = forms.findIndex(function(form) {
-          return form.slug === value;
+          return form.id === value;
         });
 
         if (prevValueIndex > -1) {
