@@ -6,7 +6,9 @@
     "build": "rollup -c"
   },
   "dependencies": {
+    "contentful-management": "^5.11.0",
     "core-js": "^2.6.1",
+    "netlify-lambda": "^1.6.3",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
